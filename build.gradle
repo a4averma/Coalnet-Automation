@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java.srcDirs = ['src']
+    }
+}
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile group: 'org.apache.poi', name: 'poi', version: '3.9'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.16'
+}
+
+repositories {
+    mavenCentral()
+}
+
